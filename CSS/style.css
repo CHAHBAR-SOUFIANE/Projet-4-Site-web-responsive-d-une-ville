@@ -1,78 +1,228 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+*{
     box-sizing: border-box;
-  }
-  
-  body{
-    background-image: url("https://archaeoadventures.com/wp-content/uploads/2018/01/2017_Morocco_Chefchaouen_genevievehathaway-1-of-15.jpg");
-    /* background-image: url(http://mylifesamovie.com/wp-content/uploads/2017/11/Chefchaouen-mylifesamovie.com_-1024x768.jpg); */
-  }
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    line-height: 1.4;
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
-  
-  .header {
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0.75rem 0; 
+}
+
+#text-primary{
+    font-weight: bold;
+    color: azure;
+}
+
+#navbar{
     display: flex;
-    background-color: #93b3ee;
-    color: #ffffff;
-    padding: 15px;
+    background: deepskyblue;
+    position: sticky;
+    top: 0px;
     justify-content: space-between;
-  }
-  
-  ul{
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    font-weight: bold;
+display: flex;
+align-items: center;
+list-style: none;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 00.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    color: violet;
+    background: rgb(252, 251, 250);
+    border-radius: 5px;
+}
+
+#Showcase{
+    background: rgb(248, 245, 245) url('../img/Chefchaouen-Morocco-blue-walls.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+#Showcase .showcase-content{
     display: flex;
-    text-align: right;
-  }
-
-  .menu {
-    
-    
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    
-    padding: 8px;
-    margin-bottom: 15px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .menu li:hover {
-    background-color: #0099cc;
-  }
-  
-  .aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
+    flex-direction: column;
     text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .footer {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-  }
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    top: 65;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
 
- li{
-   list-style: none;
-   margin: 10px;
- } 
+}
+
+.l-heading{
+    color: white;
+    font-size: 4rem;
+    margin-bottom:  0.75rem;
+    line-height: 1.1;
+}
+
+.lead{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    color: rgb(19, 18, 18);
+    background: rgb(161 192 238);
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    /* border: none; */
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color:white; ;
+}
+
+.text-primary-blue{
+    font-weight: bold;
+    color: rgb(150, 165, 206);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.m-heading{
+    font-size: 2rem;
+    margin-bottom:  0.75rem;
+    line-height: 1.1;
+}
+
+.py-1{ padding: 1.5rem 0;}
+.py-2{ padding: 2rem 0;}
+.py-3{ padding: 3rem 0;}
+
+.p-1{ padding: 1.5rem ;}
+.p-2{ padding: 2rem ;}
+.p-3{ padding: 3rem ;}
+
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+#what .items .item i{
+    background:deepskyblue ;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.place-container{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+   height: 20rem;
+}
+
+.place-container div{
+    flex: 1;
+}
+
+.place-img{
+    background: rgb(248, 245, 245) url('../img/ras-el-lma.jpg') no-repeat center center/cover;
+   
+}
+.place-img-2{background:rgb(248, 245, 245) url('../img/jbel-tissouka.jpg') no-repeat center center/cover;}
+.place-img-3{background:rgb(248, 245, 245) url('../img/kasbah.jpg') no-repeat center center/cover;}
+
+.bg-blue{
+    background:deepskyblue;
+    color: rgb(248, 245, 245);
+   
+}
+
+.bg-primary{
+    background: #FF4000;
+    color: #ffff;
+}
+
+.contact{
+    display: flex;
+}
+
+.contact .map, .contact .contact-form{
+    flex: 1;
+}
+
+.contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+
+.contact .contact-form label{
+    display: block;
+}
+
+.contact .contact-form input, .contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

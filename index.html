@@ -1,49 +1,128 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="CSS\grid.css">
-<link rel="stylesheet" href="CSS\style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" and media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="css/widescreen.css" and media="screen and (min-width:1100px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 <body>
+    <!-- nav  -->
+    <nav id="navbar">
+        <h1 id="logo">
+            <span id="text-primary">Chefchaouen</span>
+        </h1>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#propre">A propre de nous</a></li>      
+        </ul>
+    </nav>
 
-<div class="logo header">
-  <h1>Chefchaouen</h1>
-  <ul>
-    <li>ACCUEIL</li>
-    <li>Chefchaouen</li>
-    <li>ACTIVITÉS</li>
-    <li>OÙ NOUS TROUVER</li>
-  </ul>
-  <div class="col-3 col-s-3  menu">
-   
-  </div>
-</div>
+    <!-- header  -->
+    <header id="Showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                Ville bleue de Chefchaouen
+            </h1>
+            <p class="lead">
+                <span class="text-primary-blue">Chefchaouen</span>, la ville bleue du Maroc, est une belle ville aux murs bleus et aux montagnes majestueuses. Ville aussi riche en histoire qu'en beauté, Chefchaouen regorge de bons restaurants.            </p>
+            <a href="#what" class="btn">Lire la suite</a>
+        </div>
+    </header>
 
-<div class="row">
+    <!-- section  -->
+  <section id="what" class="bg-light py-1">
+      <div class="container">
+          <h2 class="m-heading text-center">Pourquoi <span class="text-primary-blue">Chefchaouen</span> ?</h2>
+          <div class="items">
+              <div class="item">
+                  <i class="fa fa-bed fa-2x"></i>
+                  <div>
+                    <h3>Meilleur hôtels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, autem voluptates unde reprehenderit fuga cumque nemo dolorem repellat error! Ullam illo, hic non ducimus quis recusandae? Accusamus saepe aspernatur voluptate?</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <i class="fa fa-cutlery fa-2x"></i>
+                  <div>
+                    <h3>Nourriture délicieuse et variée</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, autem voluptates unde reprehenderit fuga cumque nemo dolorem repellat error! Ullam illo, hic non ducimus quis recusandae? Accusamus saepe aspernatur voluptate?</p>
+                  </div>
+              </div>
+              <div class="item">
+                <i class="fa fa-leaf fa-2x"></i>
+                <div>
+                    <h3>Natural views</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, autem voluptates unde reprehenderit fuga cumque nemo dolorem 
+                        repellat error! Ullam illo, hic non ducimus quis recusandae? Accusamus saepe aspernatur voluptate?</p>
+    
+                </div>
+              </div>
+          </div> 
+      </div>
+  </section>
 
+  <!-- section les places-->
+  <section class="places">
+      <div class="place-container">
+        <div class="place-img  p-1" ></div>
+        <div class="place-text bg-blue p-1 ">
+            <h3 class="m-heading" id="text-primary">Ras El Maa Waterfall</h3>
+            <p>La cascade de Ras el-Maa se trouve juste au-delà de la porte extrême nord-est de la médina de Chefchaouen. C’est ici, là où l’eau jaillit de la montagne, que les femmes de la région viennent faire leur lessive. Le bruit de l'eau et les collines verdoyantes apportent une dose soudaine et forte de nature.</p>
+        </div>
+      </div>
 
-  <div class="col-6 col-s-9">
-    <h1>The city</h1>
-    <p>Chefchaouen est une ville du nord-ouest du Maroc, bâtie à 600 m d'altitude au pied des monts Kelaa et Meggou, sur la chaîne du Rif. Elle est le chef-lieu de la province homonyme. Sa population est de 42 786 habitants.</p>
-  </div>
+      <div class="place-container">
+        <div class="place-text bg-blue p-1">
+            <h3 class="m-heading" id="text-primary">Talassemtane National Park</h3>
+            <p>Ce parc est ÉNORME et vous pouvez le traverser pendant des jours, mais nous n'avons eu qu'un jour pour faire de la randonnée. Nous avons commencé à Akchour (à environ 45 minutes de Chefchaouen) et avons marché jusqu'à la grande cascade.</p>
+        </div>
+        <div class="place-img-2 p-1" ></div>        
+      </div>
 
-  <div class="col-3 col-s-12">
-    <div class="aside">
-      <h2>What?</h2>
-      <p>Chefchaouen is a city on the island of Crete.</p>
-      <h2>Where?</h2>
-      <p>A Chefchaouen, est une ville du nord-ouest du Maroc </p>
-      <h2>How?</h2>
-      <p>You can reach Chefchaouen nord-ouest du Maroc </p>
+      <div class="place-container">
+        <div class="place-img-3  p-1" ></div>
+        <div class="place-text bg-blue p-1 ">
+            <h3 class="m-heading" id="text-primary">Kasbah</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores asperiores placeat minima molestias vero. Qui, temporibus veniam perspiciatis atque earum omnis cum nesciunt voluptatem, quae exercitationem perferendis blanditiis. Eum.</p>
+        </div>
+      </div>  
+  </section>
+
+  <!-- section contact us -->
+<section class="contact" id="contact">
+    <div class="contact-form bg-primary p-1">
+        <h2 class="m-heading">contacter nous</h2>
+        <p>Merci d'utiliser le formulaire ci-dessous pour nous contacter</p>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Entrer votre email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telephone</label>
+                <input type="text" id="phone" placeholder="Entrer votre numero de Telephone">
+            </div>
+            <div class="form-group">
+                <label for="message">Le nom</label>
+                <textarea id="message" placeholder="Entrer votre message"></textarea>
+            </div>
+            <input type="submit" class="btn" value="Envoyer">
+        </form>
     </div>
-  </div>
+    <!-- <div class="map"></div> -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52182.7844070595!2d-5.3059999338537445!3d35.1709827108487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b265e6402d907%3A0x91548980ce97ea0c!2sChefchaouen!5e0!3m2!1sen!2sma!4v1614868329043!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- Footer  -->
+<footer class="bg-blue main-footer text-center py-1">
+<div class="container">
+    <p>Copyright &copy; 2021, Solicode, All Rights Reserved</p>
 </div>
-
-
-
+</footer>
 </body>
-<div class="footer">
-  <p>Le nom de la ville provient du berbère achawen, signifiant « les cornes »1, en raison des sommets montagneux qui dominent et l'entourent.</p>
-</div>
 </html>
